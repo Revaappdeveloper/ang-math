@@ -1,0 +1,71 @@
+<div class="form-container">
+  <form class="form-signin">
+    <!-- <img class="mb-4" src="assets/images/bootstrap-solid.svg" width="72" height="72"> -->
+    <h1 class="h3 mb-3 font-weight-normal">Sum of n numbers</h1>
+    <div>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" class="extend-width" type="number" size="30" pInputText [(ngModel)]="nthTerm"
+          name="nthTerm" (keyup)="onKeyUP($event)">
+        <label for="float-input">Enter the input</label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" class="extend-width" type="number" size="30" pInputText [(ngModel)]="output"
+          name="output">
+        <label for="float-input">output</label>
+      </span>
+      <br>
+      <!-- <button pButton type="button" label="Login" class="ui-button-rounded btn-align-center" ></button> -->
+      <!-- <button pButton type="button" class="btn-align-center" label="Login" (click)= "saveData()"></button> -->
+    </div>
+    <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p> -->
+  </form>
+
+</div>
+<div class="form-container">
+  <form class="form-signin">
+
+    <h1 class="h3 mb-3 font-weight-normal">Palindrome</h1>
+    <div>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" class="extend-width" type="number" size="30" pInputText [(ngModel)]="palindromeN"
+          name="palindromeN" (keyup.enter)="onEnter($event)">
+        <label for="float-input">Enter the input</label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" class="extend-width" type="number" size="30" pInputText [(ngModel)]="output1"
+          name="output1">
+        <label for="float-input">output</label>
+      </span>
+      <br>
+
+    </div>
+
+  </form>
+
+</div>
+<div class="form-container">
+  <form class="form-signin">
+
+    <h1 class="h3 mb-3 font-weight-normal">Fibonacci Series</h1>
+    <div>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" class="extend-width" type="number" size="30" pInputText [(ngModel)]="fib" name="fib" (keypress)="onKeyDown($event)">
+        <label for="float-input">Enter the input</label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" class="extend-width" type="number" size="30" pInputText [(ngModel)]="output2" name="output2">
+        <label for="float-input">output</label>
+      </span>
+      <br>
+
+    </div>
+
+  </form>
+
+</div>
